@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./css/reset.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/front.js"></script>
+	<title></title>
+</head>
+<body class="page_body">
+	<div class="page_wrap">
+		<div class="guide_low"><a href="javascript:;" onclick="shpuzzle.dimLayerShow({'target':'#target01'});"
+				class="btn_guidecall">레이어팝업호출</a></div>
+		<script>
+			$(function () {
+				// trigger
+				shpuzzle.dimLayerShow({ 'target': '#target01' });
+			});
+		</script>
+		<!-- -->
+		<div class="dlayer_z" id="target01">
+			<div class="dlayer_bg"></div>
+			<div class="dlayer_box_z">
+				<div class="dlayer_box_w">
+					<div class="dlayer_box">
+						<div class="layer_ctitlow"><p class="layer_ctit">FC 인증</p></div>
+						<div class="layer_contlow">
+							<table class="layer_tb">
+								<tr>
+									<th><span class="layer_thtext">이름</span></th>
+									<td>
+										<div class="layer_iden_form">
+											<input type="text" class="box_input" value="홍길동">
+											<span class="box_check"></span>
+										</div>
+									</td>
+								</tr>
+								<!-- 활성시 -->
+								<!-- <tr>
+									<td colspan="2" class="margin_td"></td>
+								</tr>
+								<tr>
+									<th><span class="layer_thtext">이름</span></th>
+									<td>
+										<div class="layer_iden_form">
+											<input type="text" class="box_input" value="홍길동">
+											<span class="box_check active"></span>
+										</div>
+									</td>
+								</tr> -->
+								<!-- // 활성시 -->
+								<tr>
+									<td colspan="2" class="margin_td"></td>
+								</tr>
+								<tr>
+									<th><span class="layer_thtext">FC번호</span></th>
+									<td>
+										<div class="layer_iden_form">
+											<input type="text" class="box_input" value="FC12345">
+											<span class="box_check"></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="margin_td"></td>
+								</tr>
+								<tr>
+									<th><span class="layer_thtext">전화번호</span></th>
+									<td>
+										<div class="layer_iden_form">
+											<input type="text" class="box_input" value="010-1111-XXXX">
+											<span class="box_check"></span>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="btn_dsmtb_w type2">
+							<div class="btn_dsmtb">
+								<a href="javascript:;" class="btn_dsmtd closetrigger">인증 완료</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // -->
+	</div>
+</body>
+
+</html>

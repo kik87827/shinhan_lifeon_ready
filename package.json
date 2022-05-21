@@ -1,0 +1,21 @@
+{
+  "name": "cartner",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-file-include": "^2.2.2",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-watch": "^5.0.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "description": ""
+}
