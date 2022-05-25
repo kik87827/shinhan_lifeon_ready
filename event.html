@@ -27,6 +27,7 @@
 				<div class="machine_top">
 					<div class="machine_cover">
 						<div class="machine_topbar"><img src="images/machine_shake.png" alt=""></div>
+						<!-- d-24 일경우 d24_motion addClasss -->
 						<div class="machine_ball_motions">
 							<!-- d-24 -->
 							<div class="d_g d_24">
@@ -254,26 +255,31 @@
 				$(".day_text").text("D-24");
 				$(".present01").addClass("disShow");
 				$(".present02").addClass("disNone");
+				$(".machine_ball_motions").addClass("d24_motion");
             }else if(url_2 === "d-day18"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-18");
 				$(".present01").addClass("disNone");
 				$(".present02").addClass("disShow");
+				$(".machine_ball_motions").addClass("d18_motion");
 			}else if(url_2 === "d-day11"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-11");
 				$(".present01").addClass("disShow");
 				$(".present02").addClass("disNone");
+				$(".machine_ball_motions").addClass("d11_motion");
 			}else if(url_2 === "d-day4"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-4");
 				$(".present01").addClass("disNone");
 				$(".present02").addClass("disShow");
+				$(".machine_ball_motions").addClass("d4_motion");
 			}else if(url_2 === "d-day1"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-1");
 				$(".present01").addClass("disNone");
 				$(".present02").addClass("disShow");
+				$(".machine_ball_motions").addClass("d1_motion");
 			}
         });
 
