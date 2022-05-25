@@ -352,7 +352,7 @@ img.obj_star{}
 img.obj_cover{position:relative;z-index:2;transition:.7s;}
 /* .machine_topbar{position:absolute;bottom:6.9672131147541%;width:60.58252427184466%;left:50%;transform: translateX(-50%);z-index:1;} */
 .machine_topbar{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;overflow:hidden;box-sizing: border-box;transform: scale(0.99);}
-.machine_topbar > img{transform: rotate(0deg);transition:5s;transition-timing-function:ease-in-out;width:60.58252427184466%;position:absolute;bottom:6.9672131147541%;left:21.35922330097087%;}
+.machine_topbar > img{transform: rotate(0deg);transition:7s;transition-timing-function:ease-in-out;width:60.58252427184466%;position:absolute;bottom:6.9672131147541%;left:21.35922330097087%;}
 .machine_topbar.active > img{transform: rotate(1080deg);}
 .landing_cloud{position:absolute;top:0;left:50%;width:750px;height:72.27214377406932%;/*background:rgba(255,0,0,.2);*/z-index:0;transform: translateX(-50%);}
 .cloud{display:inline-block;position:absolute;z-index:0}
@@ -618,6 +618,212 @@ img.obj_cover{position:relative;z-index:2;transition:.7s;}
 
 .disShow{display:inline-block !important;}
 .disNone{display:none !important;}
+
+.machine_ball_motions{z-index:2;width:86.01941747572816%;height:81.14754098360656%;position:absolute;top:19.26229508196721%;left:7.96116504854369%;overflow:hidden;}
+.lose_01{}
+.machine_ball_motions img{vertical-align: top;}
+.machine_ball_motions .ball{position:absolute;bottom:0;left:0;}
+.machine_ball_motions .ball.lose{max-width:13.99548532731377%;}
+.machine_ball_motions .ball.win_else{max-width:9.48081264108352%;}
+.machine_ball_motions .ball.win{max-width:13.99548532731377%;z-index:3;}
+
+/* d-24 */
+.machine_ball_motions .ball.lose.lose_01{left:13.76975169300226%;bottom:12.87878787878788%}
+.machine_ball_motions .ball.lose.lose_01_2{left:42.21218961625282%;bottom:20.45454545454545%}
+.machine_ball_motions .ball.lose.lose_01_3{left:60.27088036117381%;bottom:3.28282828282828%}
+.machine_ball_motions .ball.lose.lose_02{left:23.25056433408578%;bottom:20.2020202020202%}
+.machine_ball_motions .ball.lose.lose_02_2{left:24.37923250564334%;bottom:3.53535353535354%}
+.machine_ball_motions .ball.lose.lose_03{left:17.83295711060948%;bottom:3.53535353535354%}
+.machine_ball_motions .ball.lose.lose_03_2{left:63.20541760722348%;bottom:21.46464646464646%;z-index:1}
+.machine_ball_motions .ball.lose.lose_04{left:52.14446952595937%;bottom:1.76767676767677%}
+.machine_ball_motions .ball.lose.lose_05{left:34.31151241534989%;bottom:1.26262626262626%}
+.machine_ball_motions .ball.lose.lose_06{left:69.30022573363431%;bottom:3.78787878787879%;z-index:1}
+.machine_ball_motions .ball.lose.lose_07{left:73.58916478555305%;bottom:14.39393939393939%}
+
+.machine_ball_motions .ball.win_else.win_else_01{left:17.60722347629797%;bottom:21.21212121212121%;z-index:4}
+.machine_ball_motions .ball.win_else.win_else_02{left:37.47178329571106%;bottom:15.4040404040404%;z-index:4}
+.machine_ball_motions .ball.win_else.win_else_03{left:54.627539503386%;bottom:15.4040404040404%;z-index:4}
+.machine_ball_motions .ball.win_else.win_else_04{left:74.26636568848758%;bottom:21.71717171717172%;z-index:5;}
+
+.machine_ball_motions .ball.win.win_01{left:33.86004514672686%;bottom:21.44469525959368%;}
+.machine_ball_motions .ball.win.win_02{left:53.49887133182844%;bottom:24.49494949494949%;}
+.machine_ball_motions .ball.win.win_03{left:25.05643340857788%;bottom:10.35353535353535%;}
+.machine_ball_motions .ball.win.win_04{left:43.11512415349887%;bottom:6.06060606060606%;}
+.machine_ball_motions .ball.win.win_05{left:61.8510158013544%;bottom:10.1010101010101%;}
+
+/* d-18 */
+.machine_ball_motions .ball.lose.lose_02_3{left:82.39277652370203%;bottom:32.82828282828283%;z-index:4;}
+.machine_ball_motions .ball.lose.lose_02_4{left:37.24604966139955%;bottom:35%;z-index:4;}
+.machine_ball_motions .ball.lose.lose_04_2{left:4.28893905191874%;bottom:33.58585858585859%;z-index:2;}
+.machine_ball_motions .ball.lose.lose_05_2{left:80.58690744920993%;bottom:21.21212121212121%}
+.machine_ball_motions .ball.lose.lose_05_3{left:61.17381489841986%;bottom:35.85858585858586%;z-index:3;}
+.machine_ball_motions .ball.lose.lose_06_2{left:26.41083521444695%;bottom:33%;z-index:3;}
+.machine_ball_motions .ball.lose.lose_07_2{left:5.64334085778781%;bottom:20.95959595959596%}
+.machine_ball_motions .ball.lose.lose_07_3{left:49.66139954853273%;bottom:37.12121212121212%}
+.machine_ball_motions .ball.win_else.win_else_05{left:27.08803611738149%;bottom:29%;z-index:4;}
+.machine_ball_motions .ball.win_else.win_else_06{left:46.04966139954853%;bottom:31.81818181818182%;z-index:4;}
+.machine_ball_motions .ball.win_else.win_else_07{left:64.78555304740406%;bottom:33.33333333333333%;z-index:6;}
+.machine_ball_motions .ball.win_else.win_else_04_2{left:58.69074492099323%;bottom:45.70707070707071%;z-index:5;}
+.machine_ball_motions .ball.win_else.win_else_01_2{left:33.40857787810384%;bottom:45.45454545454545%;z-index:4}
+
+.machine_ball_motions .ball.win.win_06{left:14.22121896162528%;bottom:30.3030303030303%;}
+.machine_ball_motions .ball.win.win_07{left:73.36343115124153%;bottom:29.7979797979798%;z-index:4;}
+
+/* d-11 */
+.machine_ball_motions .ball.lose.lose_01_4{left:12%;bottom:54.04040404040404%;z-index:2;}
+.machine_ball_motions .ball.lose.lose_01_5{left:84.42437923250564%;bottom:45%;}
+.machine_ball_motions .ball.lose.lose_02_5{left:65.01128668171558%;bottom:46.21212121212121%;}
+.machine_ball_motions .ball.lose.lose_02_6{left:1.12866817155756%;bottom:47.22222222222222%;}
+.machine_ball_motions .ball.lose.lose_03_3{left:12%;bottom:39.14141414141414%;z-index:1}
+.machine_ball_motions .ball.lose.lose_04_3{left:51.01580135440181%;bottom:50%;z-index:1}
+.machine_ball_motions .ball.lose.lose_04_4{left:72.91196388261851%;bottom:39.64646464646465%;z-index:1}
+.machine_ball_motions .ball.lose.lose_05_4{left:34.08577878103837%;bottom:50.50505050505051%;z-index:1}
+.machine_ball_motions .ball.lose.lose_07_4{left:21%;bottom:45%;}
+.machine_ball_motions .ball.lose.lose_07_5{left:73.58916478555305%;bottom:52.27272727272727%;z-index:1;}
+
+.machine_ball_motions .ball.win_else.win_else_04_3{left:7.90067720090293%;bottom:45.2020202020202%;z-index:4;}
+.machine_ball_motions .ball.win_else.win_else_03_2{left:45.14672686230248%;bottom:61.11111111111111%;z-index:4;}
+.machine_ball_motions .ball.win_else.win_else_05_2{left:82.61851015801354%;bottom:44.94949494949495%;z-index:4;}
+
+.machine_ball_motions .ball.win.win_07_2{left:43.34085778781038%;bottom:48.73737373737374%;z-index:3;}
+.machine_ball_motions .ball.win.win_04_2{left:63.43115124153499%;bottom:58.08080808080808%;z-index:3;}
+.machine_ball_motions .ball.win.win_05_2{left:22%;bottom:55%;z-index:3;}
+
+/* d-4 */
+.machine_ball_motions .ball.lose.lose_01_6{left:52%;bottom:59.84848484848485%;}
+.machine_ball_motions .ball.lose.lose_03_4{left:18.05869074492099%;bottom:64.39393939393939%;z-index:1;}
+.machine_ball_motions .ball.lose.lose_03_5{left:42.88939051918736%;bottom:70.2020202020202%;z-index:1;}
+.machine_ball_motions .ball.lose.lose_04_5{left:32.7313769751693%;bottom:60.60606060606061%;}
+.machine_ball_motions .ball.lose.lose_05_5{left:60.94808126410835%;bottom:70.70707070707071%;z-index:1;}
+.machine_ball_motions .ball.lose.lose_05_6{left:81%;bottom:57%;}
+.machine_ball_motions .ball.lose.lose_06_3{left:25.73363431151242%;bottom:70.70707070707071%;z-index:1;}
+.machine_ball_motions .ball.lose.lose_06_4{left:68.39729119638826%;bottom:63.88888888888889%;}
+.machine_ball_motions .ball.lose.lose_07_6{left:5.19187358916479%;bottom:58%;}
+
+.machine_ball_motions .ball.win_else.win_else_04_4{left:12.86681715575621%;bottom:66.16161616161616%;z-index:3;}
+.machine_ball_motions .ball.win_else.win_else_02_2{left:37.24604966139955%;bottom:73.48484848484848%;z-index:3;}
+.machine_ball_motions .ball.win_else.win_else_07_2{left:54.17607223476298%;bottom:73.23232323232323%;z-index:3;}
+.machine_ball_motions .ball.win_else.win_else_01_3{left:79.006772009029358%;bottom:66.66666666666667%;z-index:3;}
+
+
+.machine_ball_motions .ball.win.win_06_2{left:13%;bottom:73.23232323232323%;z-index:2;}
+.machine_ball_motions .ball.win.win_07_3{left:73.36343115124153%;bottom:72.97979797979798%;z-index:2;}
+/* // d-4 */
+
+
+/* d-1 */
+.machine_ball_motions .ball.lose.lose_01_7{left:41.7607223476298%;bottom:82.82828282828283%;}
+.machine_ball_motions .ball.lose.lose_02_7{left:23.25056433408578%;bottom:80.05050505050505%;}
+.machine_ball_motions .ball.lose.lose_03_6{left:63%;bottom:79.7979797979798%;}
+
+.machine_ball_motions .ball.win_else.win_else_05_3{left:24.15349887133183%;bottom:78.78787878787879%;z-index:3;}
+.machine_ball_motions .ball.win_else.win_else_03_3{left:67.2686230248307%;bottom:78.28282828282828%;z-index:3;}
+
+.machine_ball_motions .ball.win.win_01_2{left:33.86004514672686%;bottom:80.80808080808081%;z-index:2;}
+.machine_ball_motions .ball.win.win_02_2{left:52.82167042889391%;bottom:79.7979797979798%;z-index:2;}
+/* // d-1 */
+
+.d_g{display:none;}
+.d_g.d_24{display:block;}
+.d_g.d_24 .ball{display:block;}
+.machine_ball_motions.active img{animation: ball_rotate 8s ease-in-out;}
+.d_g.d_18{}
+.d_g.d_11{}
+.d_g.d_4{}
+.d_g.d_1{}
+
+.machine_ball_motions.active .d_g .ball{}
+
+
+.machine_ball_motions.active .ball.lose.lose_01{animation: bottom_01_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_01_2{animation: bottom_02_2_action 7s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_01_3{animation: bottom_01_2_action 7s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_02{animation: bottom_02_3_action 7s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_02_2{animation: bottom_01_action 7s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_03{animation: bottom_01_2_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_03_2{z-index:1;animation: bottom_02_2_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_04{animation: bottom_01_2_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_05{animation: bottom_01_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_06{z-index:1;animation: bottom_01_action 6s ease-in-out;}
+.machine_ball_motions.active .ball.lose.lose_07{animation: bottom_02_action 6s ease-in-out;}
+
+.machine_ball_motions.active .ball.win_else.win_else_01{z-index:4;animation: bottom_02_2_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.win_else.win_else_02{z-index:4;animation: bottom_02_4_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.win_else.win_else_03{z-index:4;animation: bottom_01_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.win_else.win_else_04{z-index:5;animation: bottom_02_action 7.5s ease-in-out;}
+
+.machine_ball_motions.active .ball.win.win_01{animation: bottom_02_2_action 7s ease-in-out;}
+.machine_ball_motions.active .ball.win.win_02{animation: bottom_02_action 7s ease-in-out;}
+.machine_ball_motions.active .ball.win.win_03{animation: bottom_02_2_action 7.5s ease-in-out;}
+.machine_ball_motions.active .ball.win.win_04{animation: bottom_01_action 7s ease-in-out;}
+.machine_ball_motions.active .ball.win.win_05{animation: bottom_02_action 7.5s ease-in-out;}
+
+@keyframes bottom_01_action {
+  0% {transform: rotate(0deg) translate3D(0,0,0);}
+  15% {transform: translate3D(-55%, -40%,0);}
+  30% {transform: translate3D(-10%, 10%,0);}
+  45% {transform: translate3D(-55%, -20%,0);}
+  60% {transform: translate3D(-10%, 10%,0);}
+  75% {transform: translate3D(-55%, -40%,0);}
+  90% {transform: translate3D(-10%, 10%,0);}
+  100% {transform: translate3D(0,0,0);}
+}
+
+@keyframes bottom_01_2_action {
+  0% {transform: rotate(0deg) translate3D(0,0,0);}
+  20% {transform: translate3D(-30%, -50%,0);}
+  35% {transform: translate3D(-5%, 5%,0);}
+  50% {transform: translate3D(-30%, -30%,0);}
+  65% {transform: translate3D(-5%, 5%,0);}
+  80% {transform: translate3D(0, -20%,0);}
+  100% {transform: translate3D(0,0,0);}
+}
+
+@keyframes bottom_02_action {
+  0% {transform: rotate(0deg) translate3D(0,0,0);}
+  20% {transform: translate3D(-50%, -200%,0);}
+  40% {transform: translate3D(0, 12%,0);}
+  60% {transform: translate3D(-35%, -150%,0);}
+  80% {transform: translate3D(0, 12%,0);}
+  100% {transform: translate3D(0,0,0);}
+}
+
+@keyframes bottom_02_2_action {
+  0% {transform: rotate(0deg) translate3D(0,0,0);}
+  12% {transform: translate3D(-50%, -170%,0);}
+  24% {transform: translate3D(-20%, 3%,0);}
+  36% {transform: translate3D(-50%, -100%,0);}
+  48% {transform: translate3D(-20%, 3%,0);}
+  60% {transform: translate3D(-50%, -100%,0);}
+  72% {transform: translate3D(0, 3%,0);}
+  84% {transform: translate3D(-20%, -100%,0);}
+  96% {transform: translate3D(0, 3%,0);}
+  100% {transform: translate3D(0,0,0);}
+}
+
+@keyframes bottom_02_3_action {
+  0% {transform: rotate(0deg) translate3D(0,0,0);}
+  15% {transform: translate3D(-50%, -230%,0);}
+  30% {transform: translate3D(0, 7%,0);}
+  45% {transform: translate3D(-50%, -70%,0);}
+  60% {transform: translate3D(0, 7%,0);}
+  80% {transform: translate3D(0, -70%,0);}
+  100% {transform: translate3D(0,0,0);}
+}
+
+@keyframes bottom_02_4_action {
+  0% {transform: rotate(0deg) translate3D(0,0,0);}
+  20% {transform: translate3D(-20%, -280%,0);}
+  40% {transform: translate3D(0, 4%,0);}
+  60% {transform: translate3D(-20%, -180%,0);}
+  80% {transform: translate3D(0, 4%,0);}
+  100% {transform: translate3D(0,0,0);}
+}
+
+@keyframes ball_rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(3600deg);}
+} 
 
 @media (max-width:750px){
 	.ldue_w{padding:25px 20px;}
