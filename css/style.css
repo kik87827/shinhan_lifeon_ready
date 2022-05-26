@@ -8,11 +8,15 @@
 .dlayer_z1{display:none;min-width:280px;position:absolute;top:0;width:100%;height:100%;z-index:10000;overflow:hidden;overflow-y:auto;}
 
 .dlayer_z.active{display:block;}
+.dlayer_z.active.motion .dlayer_box{opacity:1;transform:translate(0,0)}
+.dlayer_z.active.motion .design_wbox_w{opacity:1;transform:translate(0,0)}
+.dlayer_z.active.motion .dlayer_bg{background:rgba(0,0,0,.2);}
 .dlayer_z1.active{display:block;}
-.dlayer_bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:5;background:rgba(0,0,0,.2);}
+.dlayer_z1.active{display:block;}
+.dlayer_bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:5;background:rgba(0,0,0,0);transition:.5s;}
 .dlayer_box_z{display:table;width:100%;height:100%;table-layout: fixed;position:relative;z-index:10;}
 .dlayer_box_w{padding:25px;display:table-cell;vertical-align: middle;}
-.dlayer_box{background:#fff;box-sizing:border-box;padding:0;position:relative;border-radius:50px;position:relative;overflow:hidden;max-width:670px;margin:0 auto;}
+.dlayer_box{opacity:0;transition:.5s;transform:translate(0,-30%);background:#fff;box-sizing:border-box;padding:0;position:relative;border-radius:50px;position:relative;overflow:hidden;max-width:670px;margin:0 auto;}
 .dlayer_tit_low{padding:35px 0;text-align:center;border-bottom:1px solid #bebebe;}
 .dlayer_tit{font-size:36px;color:#313131;line-height:1;font-family: 'ngb';}
 .dlayer_cont_low{}
@@ -109,7 +113,7 @@ input.box_input{flex:1;height:85px;line-height:1;color:#4d4d4d;font-size:36px;bo
 .btn_layersubmit_low{margin-top:42px;}
 .btn_layersubmit{background:#705dcf;font-size:42px;color:#ffffff;display:block;text-align:center;line-height:1;padding:30px 0;}
 
-.design_wbox_w{max-width:525px;margin:0 auto;text-align: center;}
+.design_wbox_w{max-width:525px;margin:0 auto;text-align: center;transition:.5s;opacity:0;transform:translate(0,-30%);}
 .design_wbox_top{background:url("../images/bg_popup_top.png") no-repeat 0 0/100% auto;min-height:114px;box-sizing: border-box;padding:50px 0 25px;}
 .design_wbox_bottom{padding:30px 40px 63px;background:url("../images/bg_popup_bottom.png") no-repeat 0 100%/100% auto;min-height:125px;}
 
@@ -352,7 +356,7 @@ img.obj_star{}
 img.obj_cover{position:relative;z-index:2;transition:.7s;}
 /* .machine_topbar{position:absolute;bottom:6.9672131147541%;width:60.58252427184466%;left:50%;transform: translateX(-50%);z-index:1;} */
 .machine_topbar{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;overflow:hidden;box-sizing: border-box;transform: scale(0.99);}
-.machine_topbar > img{transform: rotate(0deg);transition:7s;transition-timing-function:ease-in-out;width:60.58252427184466%;position:absolute;bottom:6.9672131147541%;left:21.35922330097087%;}
+.machine_topbar > img{transform: rotate(0deg);transition:3.5s;transition-timing-function:ease-in-out;width:60.58252427184466%;position:absolute;bottom:6.9672131147541%;left:21.35922330097087%;}
 .machine_topbar.active > img{transform: rotate(1080deg);}
 .landing_cloud{position:absolute;top:0;left:50%;width:750px;height:72.27214377406932%;/*background:rgba(255,0,0,.2);*/z-index:0;transform: translateX(-50%);}
 .cloud{display:inline-block;position:absolute;z-index:0}
@@ -387,7 +391,7 @@ img.obj_cover{position:relative;z-index:2;transition:.7s;}
 .top_day img.bg_img{width:auto;}
 
 .machine_bottombar{position:absolute;top:6.18556701030928%;left:50%;transform: translateX(-50%);width:14.66666666666667%;}
-.machine_bottombar img{transform: rotate(0deg);transition:3s;}
+.machine_bottombar img{transform: rotate(0deg);transition:1.2s;}
 .machine_bottombar.active{}
 .machine_bottombar.active img{transform: rotate(360deg);}
 
@@ -395,24 +399,24 @@ img.obj_cover{position:relative;z-index:2;transition:.7s;}
 .footer_copy_in{font-size:12px;color:#444445;font-family: 'OneShinhan';}
 
 .machine_show_ball{position:absolute;bottom:19.24398625429553%;left:50%;transform: translateX(-50%);width:8.26666666666667%;}
-.machine_show_ball:before{display:block;content:'';width:100%;height:56%;opacity:0;transition:.5s;transition-delay:200ms;background:url("../images/win/shadow.png") no-repeat 0 0/100% 100%;z-index:0;position:absolute;bottom:-20%;left:0;}
+.machine_show_ball:before{display:block;content:'';width:100%;height:56%;opacity:0;transition:.5s;transition-delay:100ms;background:url("../images/win/shadow.png") no-repeat 0 0/100% 100%;z-index:0;position:absolute;bottom:-20%;left:0;}
 .machine_show_ball > img{position: relative;z-index:2;opacity:0;transition:.5s;transform: scale(.8);transform:rotate(1080deg);}
 .machine_show_ball.active{opacity:1;}
 .machine_show_ball.active:before{opacity:1;}
 .machine_show_ball.active > img{opacity:1;transform: scale(1);transform:rotate(0);}
 
-.machine_click_low{position:absolute;top:17.86941580756014%;width:5.6%;height:14.43298969072165%;left:47.1%;animation: scaleAni 1s ease-in infinite;}
+.machine_click_low{position:absolute;top:17.86941580756014%;width:5.6%;height:14.43298969072165%;left:47.1%;animation: scaleAni 1.3s ease-in infinite;}
 .machine_click{display:block;height:100%;width:100%;background:url("../images/obj_induce.png") no-repeat 50% 50%/cover;border-radius:100%;display:flex;align-items: center;justify-content: center;color:#fff;font-size:16px;font-family: 'OneShinhan';letter-spacing: -1px;font-weight:700;}
 .click_text{display:inline-block;white-space: nowrap;}
 .machine_balloon{position:absolute;top:36.76975945017182%;left:50%;width:24.93333333333333%;transform: translateX(-50%);animation: updown 1.3s ease-in infinite;}
 @keyframes updown {
 	0% {top:36.76975945017182%;}
-	50% {top:40%;}
+	50% {top:45%;}
 	100% {top:36.76975945017182%;}
 }
 @keyframes scaleAni {
 	0% {transform: scale(1.0);}
-	50% {transform: scale(1.1);}
+	50% {transform: scale(1.5);}
 	100% {transform: scale(1.0);}
 }
 .machine_balls{position:absolute;bottom:2.45901639344262%;width:83.49514563106796%;left:9.2%;z-index:1;transition:.5s;}
@@ -726,7 +730,7 @@ img.obj_cover{position:relative;z-index:2;transition:.7s;}
 .d_g{display:none;}
 .d_g.d_24{display:block;}
 .d_g.d_24 .ball{display:block;}
-.machine_ball_motions.active img{animation: ball_rotate 8s ease-in-out;}
+.machine_ball_motions.active img{animation: ball_rotate 3.5s ease-in-out;}
 .d_g.d_18{}
 .d_g.d_11{}
 .d_g.d_4{}
@@ -753,72 +757,157 @@ img.obj_cover{position:relative;z-index:2;transition:.7s;}
 .machine_ball_motions.d1_motion .d_g.d_1{display:block;}
 
 
-.machine_ball_motions.d24_motion.active .ball.lose.lose_01{animation: bottom_01_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_01_2{animation: bottom_02_2_action 7s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_01_3{animation: bottom_01_2_action 7s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_02{animation: bottom_02_3_action 7s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_02_2{animation: bottom_01_action 7s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_03{animation: bottom_01_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_03_2{z-index:1;animation: bottom_02_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_04{animation: bottom_01_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_05{animation: bottom_01_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_06{z-index:1;animation: bottom_01_action 6s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.lose.lose_07{animation: bottom_02_action 6s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_01{animation: bottom_01_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_01_2{animation: bottom_02_2_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_01_3{animation: bottom_01_2_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_02{animation: bottom_02_3_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_02_2{animation: bottom_01_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_03{animation: bottom_01_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_03_2{z-index:1;animation: bottom_02_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_04{animation: bottom_01_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_05{animation: bottom_01_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_06{z-index:1;animation: bottom_01_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.lose.lose_07{animation: bottom_02_action 3s ease-in-out;}
 
-.machine_ball_motions.d24_motion.active .ball.win_else.win_else_01{z-index:4;animation: bottom_02_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.win_else.win_else_02{z-index:4;animation: bottom_02_4_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.win_else.win_else_03{z-index:4;animation: bottom_01_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.win_else.win_else_04{z-index:5;animation: bottom_02_action 7.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win_else.win_else_01{z-index:4;animation: bottom_02_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win_else.win_else_02{z-index:4;animation: bottom_02_4_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win_else.win_else_03{z-index:4;animation: bottom_01_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win_else.win_else_04{z-index:5;animation: bottom_02_action 3.5s ease-in-out;}
 
-.machine_ball_motions.d24_motion.active .ball.win.win_01{animation: bottom_02_2_action 7s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.win.win_02{animation: bottom_02_action 7s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.win.win_03{animation: bottom_02_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.win.win_04{animation: bottom_01_action 7s ease-in-out;}
-.machine_ball_motions.d24_motion.active .ball.win.win_05{animation: bottom_02_action 7.5s ease-in-out;}
-
-
-.machine_ball_motions.d18_motion.active .ball.lose.lose_01{animation: bottom_01_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_01_2{animation: bottom_02_2_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_01_3{animation: bottom_01_2_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_02{animation: bottom_02_3_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_02_2{animation: bottom_01_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_03{animation: bottom_01_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_03_2{z-index:1;animation: bottom_02_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_04{animation: bottom_01_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_05{animation: bottom_01_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_06{z-index:1;animation: bottom_01_action 6s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_07{animation: bottom_f02_action 6s ease-in-out;}
-
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_01{z-index:4;animation: bottom_02_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_02{z-index:4;animation: bottom_02_4_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_03{z-index:4;animation: bottom_01_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_04{z-index:5;animation: bottom_02_action 7.5s ease-in-out;}
-
-.machine_ball_motions.d18_motion.active .ball.win.win_01{animation: bottom_02_2_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win.win_02{animation: bottom_02_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win.win_03{animation: bottom_02_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win.win_04{animation: bottom_01_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win.win_05{animation: bottom_02_action 7.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win.win_01{animation: bottom_02_2_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win.win_02{animation: bottom_02_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win.win_03{animation: bottom_02_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win.win_04{animation: bottom_01_action 3s ease-in-out;}
+.machine_ball_motions.d24_motion.active .ball.win.win_05{animation: bottom_02_action 3.5s ease-in-out;}
 
 
-.machine_ball_motions.d18_motion.active .ball.lose.lose_02_3{animation: bottom_f02_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_02_4{animation: bottom_f02_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_04_2{animation: bottom_f02_3_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_05_2{animation: bottom_f02_action 8s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_05_3{animation: bottom_f02_2_action 6.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_06_2{animation: bottom_f02_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_07_2{animation: bottom_f02_2_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.lose.lose_07_3{animation: bottom_f02_action 7s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_01{animation: bottom_01_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_01_2{animation: bottom_02_2_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_01_3{animation: bottom_01_2_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_02{animation: bottom_02_3_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_02_2{animation: bottom_01_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_03{animation: bottom_01_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_03_2{z-index:1;animation: bottom_02_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_04{animation: bottom_01_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_05{animation: bottom_01_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_06{z-index:1;animation: bottom_01_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_07{animation: bottom_f02_action 3s ease-in-out;}
 
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_05{animation: bottom_f02_action 7.5s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_06{animation: bottom_f02_2_action 8s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_07{animation: bottom_f02_action 6s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_04_2{animation: bottom_f02_2_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win_else.win_else_01_2{animation: bottom_f02_action 7.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_01{z-index:4;animation: bottom_02_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_02{z-index:4;animation: bottom_02_4_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_03{z-index:4;animation: bottom_01_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_04{z-index:5;animation: bottom_02_action 3.5s ease-in-out;}
 
-.machine_ball_motions.d18_motion.active .ball.win.win_06{animation: bottom_f02_action 7s ease-in-out;}
-.machine_ball_motions.d18_motion.active .ball.win.win_07{animation: bottom_f02_2_action 7.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win.win_01{animation: bottom_02_2_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win.win_02{animation: bottom_02_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win.win_03{animation: bottom_02_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win.win_04{animation: bottom_01_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win.win_05{animation: bottom_02_action 3.5s ease-in-out;}
 
+
+.machine_ball_motions.d18_motion.active .ball.lose.lose_02_3{animation: bottom_f02_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_02_4{animation: bottom_f02_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_04_2{animation: bottom_f02_3_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_05_2{animation: bottom_f02_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_05_3{animation: bottom_f02_2_action 2.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_06_2{animation: bottom_f02_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_07_2{animation: bottom_f02_2_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.lose.lose_07_3{animation: bottom_f02_action 3s ease-in-out;}
+
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_05{animation: bottom_f02_action 3.5s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_06{animation: bottom_f02_2_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_07{animation: bottom_f02_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_04_2{animation: bottom_f02_2_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win_else.win_else_01_2{animation: bottom_f02_action 3.5s ease-in-out;}
+
+.machine_ball_motions.d18_motion.active .ball.win.win_06{animation: bottom_f02_action 3s ease-in-out;}
+.machine_ball_motions.d18_motion.active .ball.win.win_07{animation: bottom_f02_2_action 3.5s ease-in-out;}
+
+
+
+
+
+.machine_ball_motions.d11_motion.active .ball.lose.lose_01{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_01_2{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_01_3{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_02{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_02_2{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_03{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_03_2{z-index:1;animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_04{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_05{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_06{z-index:1;animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_07{animation: bottom_full_action 3s ease-in-out;}
+
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_01{z-index:4;animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_02{z-index:4;animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_03{z-index:4;animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_04{z-index:5;animation: bottom_full_action 3.5s ease-in-out;}
+
+.machine_ball_motions.d11_motion.active .ball.win.win_01{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win.win_02{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win.win_03{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win.win_04{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win.win_05{animation: bottom_full_action 3.5s ease-in-out;}
+
+
+.machine_ball_motions.d11_motion.active .ball.lose.lose_02_3{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_02_4{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_04_2{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_05_2{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_05_3{animation: bottom_full_action 2.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_06_2{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_07_2{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_07_3{animation: bottom_full_action 3s ease-in-out;}
+
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_05{animation: bottom_full_action 3.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_06{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_07{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_04_2{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_01_2{animation: bottom_full_action 3.5s ease-in-out;}
+
+.machine_ball_motions.d11_motion.active .ball.win.win_06{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win.win_07{animation: bottom_full_action 3.5s ease-in-out;}
+
+.machine_ball_motions.d11_motion.active .ball.lose.lose_01_4{animation: bottom_full2_action 2.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_01_5{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_02_5{animation: bottom_full2_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_02_6{animation: bottom_full3_action 2.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_03_3{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_04_3{animation: bottom_full2_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_04_4{animation: bottom_full3_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_05_4{animation: bottom_full_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_07_4{animation: bottom_full2_action 2.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.lose.lose_07_5{animation: bottom_full3_action 3s ease-in-out;}
+
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_04_3{animation: bottom_full4_action 2.5s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_03_2{animation: bottom_full4_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win_else.win_else_05_2{animation: bottom_full4_action 2.5s ease-in-out;}
+
+.machine_ball_motions.d11_motion.active .ball.win.win_07_2{animation: bottom_full2_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win.win_04_2{animation: bottom_full3_action 3s ease-in-out;}
+.machine_ball_motions.d11_motion.active .ball.win.win_05_2{animation: bottom_full2_action 3s ease-in-out;}
+
+
+
+.machine_ball_motions.d4_motion.active .ball.lose.lose_01_6{animation: bottom_full44_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_03_4{animation: bottom_full44_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_03_5{animation: bottom_full442_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_04_5{animation: bottom_full44_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_05_5{animation: bottom_full442_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_05_6{animation: bottom_full44_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_06_3{animation: bottom_full442_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_06_4{animation: bottom_full44_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.lose.lose_07_6{animation: bottom_full44_action 3s ease-in-out;}
+
+.machine_ball_motions.d4_motion.active .ball.win_else.win_else_04_4{animation: bottom_full442_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.win_else.win_else_02_2{animation: bottom_full44_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.win_else.win_else_07_2{animation: bottom_full44_action 3s ease-in-out;}
+.machine_ball_motions.d4_motion.active .ball.win_else.win_else_01_3{animation: bottom_full44_action 3s ease-in-out;}
+
+
+.machine_ball_motions.d4_motion.active .ball.win.win_06_2{}
+.machine_ball_motions.d4_motion.active .ball.win.win_07_3{animation: bottom_full44_action 3s ease-in-out;}
 
 @keyframes bottom_01_action {
   0% {transform: rotate(0deg) translate3D(0,0,0);}
@@ -921,6 +1010,70 @@ img.obj_cover{position:relative;z-index:2;transition:.7s;}
   90% {transform: translate3D(-10%, -30%,0);}
   100% {transform: translate3D(0,0,0);}
 }
+
+
+@keyframes bottom_full_action {
+	0% {transform: rotate(0deg) translate3D(0,0,0);}
+	15% {transform: translate3D(-5%, -20%,0);}
+	30% {transform: translate3D(-5%, 5%,0);}
+	45% {transform: translate3D(-10%, -10%,0);}
+	60% {transform: translate3D(-5%, 5%,0);}
+	75% {transform: translate3D(-10%, -15%,0);}
+	90% {transform: translate3D(-5%, 0,0);}
+	100% {transform: translate3D(0,0,0);}
+  }
+
+
+  
+@keyframes bottom_full2_action {
+	0% {transform: rotate(0deg) translate3D(0,0,0);}
+	20% {transform: translate3D(0, -90%,0);}
+	40% {transform: translate3D(0, -10%,0);}
+	60% {transform: translate3D(0, -100%,0);}
+	80% {transform: translate3D(0, 0,0);}
+	100% {transform: translate3D(0,0,0);}
+  }
+
+  
+@keyframes bottom_full4_action {
+	0% {transform: rotate(0deg) translate3D(0,0,0);}
+	20% {transform: translate3D(0%, -90%,0);}
+	40% {transform: translate3D(0%, -10%,0);}
+	80% {transform: translate3D(0%, -90%,0);}
+	100% {transform: translate3D(0,0,0);}
+  }
+  
+@keyframes bottom_full3_action {
+	0% {transform: rotate(0deg) translate3D(0,0,0);}
+	30% {transform: translate3D(0%, -40%,0);}
+	60% {transform: translate3D(0%, 0,0);}
+	90% {transform: translate3D(0%, -40%,0);}
+	100% {transform: translate3D(0,0,0);}
+  }
+
+
+  @keyframes bottom_full44_action {
+	0% {transform: rotate(0deg) translate3D(0,0,0);}
+	15% {transform: translate3D(-10%, -20%,0);}
+	30% {transform: translate3D(-5%, 5%,0);}
+	45% {transform: translate3D(-10%, -5%,0);}
+	60% {transform: translate3D(-5%, 5%,0);}
+	75% {transform: translate3D(-10%, -20%,0);}
+	90% {transform: translate3D(-5%, 0,0);}
+	100% {transform: translate3D(0,0,0);}
+  }
+
+  @keyframes bottom_full442_action {
+	0% {transform: rotate(0deg) translate3D(0,0,0);}
+	20% {transform: translate3D(-10%, -70%,0);}
+	40% {transform: translate3D(-5%, 5%,0);}
+	60% {transform: translate3D(-10%, -30%,0);}
+	80% {transform: translate3D(-5%, 5%,0);}
+	100% {transform: translate3D(0,0,0);}
+  }
+
+
+
 
 @media (max-width:750px){
 	.ldue_w{padding:25px 20px;}
