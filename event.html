@@ -243,6 +243,29 @@
 		</div>
 		<div class="footer_copy_w"><div class="footer_copy_in">회사명 : 어질리티 코리아 (주) / 사업자번호 : 211-86-01035 / 대표자 : 박소영 / 대표번호 : 1644-9376</div></div>
     </div>
+
+	<!-- 모션 끝나고 나오는 팝업 -->
+	<div class="dlayer_z" id="target01">
+		<div class="dlayer_bg"></div>
+		<div class="dlayer_box_z">
+			<div class="dlayer_box_w">
+				<div class="design_wbox_w">
+					<div class="design_wbox_top">
+						<div class="win_copy_img"><img src="images/popup_win_text.png" alt=""></div>
+						<p class="win_copy_text">7월 1일 Life On이 여러분을 찾아갑니다</p>
+					</div>
+					<div class="design_wbox_bottom">
+						<div class="design_copy_text_w">
+							<p class="design_copy_text">스마일ON은 고객이 직접 스마트창구 앱에서 스탬프 적립 현황 확인과 혜택 신청이 가능하다</p>
+						</div>
+						<div class="btn_design_submit_w"><a href="#" class="btn_design_submit closetrigger"><span class="btn_design_submit_text">홍보 영상 보기</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // 모션 끝나고 나오는 팝업 -->
+
 	<script>
         // 코딩전달용 모드 설정
         $(function(){
@@ -287,11 +310,11 @@
 		$(function(){
 			$(".machine_click").on("click",function(e){
 				e.preventDefault();
-				$(".machine_click,.machine_balloon").fadeOut(800,function(){
+				$(".machine_click,.machine_balloon").fadeOut(400,function(){
 					$(".machine_bottombar").addClass("active");
 					setTimeout(function(){
 						machineStart();
-					},2200);
+					},1200);
 				});
 			});
 			function machineStart(){
@@ -301,10 +324,13 @@
 				},500);
 				setTimeout(function(){
 					showBall();
-				},9000);
+				},4500);
 			}
 			function showBall(){
 				$(".machine_show_ball").addClass("active");
+				setTimeout(function(){
+					shpuzzle.dimLayerShow({ 'target': '#target01' });
+				},700);
 			}
 			
 		});

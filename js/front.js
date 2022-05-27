@@ -80,6 +80,9 @@ shpuzzle = {
 			if ($modal.length === 0) { return; }
 			$modal.removeClass("active");
 			$target.addClass("active");
+			setTimeout(function(){
+				$target.addClass("motion");
+			},30);
 
 			$page_wrap.css({ "z-index": 0 });
 			heightcheck();
@@ -130,7 +133,10 @@ shpuzzle = {
 		$(function () {
 			$modal = $(".dlayer_w");
 			$target = $(option.target);
-			$target.removeClass("active");
+			$target.removeClass("motion");
+			setTimeout(function(){
+				$target.removeClass("active");
+			},530);
 			$(".page_wrap").css({ "z-index": "" });
 			$("html,body").removeClass("touchDis");
 			scrollEnd();
