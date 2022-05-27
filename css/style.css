@@ -143,6 +143,8 @@ input.box_input{flex:1;height:85px;line-height:1;color:#4d4d4d;font-size:36px;bo
 .design_lose_img img{}
 .design_lose_text{font-size:42px;color:#6259a4;font-family: 'OneShinhan';font-weight: 900;line-height:1.3;margin-left:10px;}
 
+.design_copy_text_title{margin-bottom:20px;}
+
 @keyframes btn_press {
   0% {transform:translateY(0);}
   50% {transform:translateY(7px);}
@@ -258,6 +260,8 @@ input.box_input{flex:1;height:85px;line-height:1;color:#4d4d4d;font-size:36px;bo
 	.design_lose_text{font-size:24px;}
 	.design_lose_ment_fxwrap{padding:10px 0 0;}
 	.btn_design_submit.type2 .btn_design_submit_text{font-size:28px;}
+
+	.design_copy_text_title{margin-bottom:10px;}
 }
 
 @media (max-width:720px){
