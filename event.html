@@ -214,6 +214,7 @@
 				</div>
 			</div>
 			<div class="landing_present">
+				<img src="images/event_bot_present2_2.jpg" class="present01_2" alt="">
 				<img src="images/event_bot_present2.jpg" class="present01" alt="">
 				<img src="images/event_bot_present.jpg" class="present02" alt="">
 			</div>
@@ -276,31 +277,31 @@
             if(url_2 === "d-day24"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-24");
-				$(".present01").addClass("disShow");
-				$(".present02").addClass("disNone");
+				$(".present01_2").addClass("disShow");
+				$(".present02,.present01").addClass("disNone");
 				$(".machine_ball_motions").addClass("d24_motion");
             }else if(url_2 === "d-day18"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-18");
-				$(".present01").addClass("disNone");
+				$(".present01,.present01_2").addClass("disNone");
 				$(".present02").addClass("disShow");
 				$(".machine_ball_motions").addClass("d18_motion");
 			}else if(url_2 === "d-day11"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-11");
-				$(".present01").addClass("disShow");
-				$(".present02").addClass("disNone");
+				$(".present01_2").addClass("disShow");
+				$(".present02,.present01").addClass("disNone");
 				$(".machine_ball_motions").addClass("d11_motion");
 			}else if(url_2 === "d-day4"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-4");
-				$(".present01").addClass("disNone");
+				$(".present01,.present01_2").addClass("disNone");
 				$(".present02").addClass("disShow");
 				$(".machine_ball_motions").addClass("d4_motion");
 			}else if(url_2 === "d-day1"){
 				$(".landing_wrap").addClass("count_daymode");
 				$(".day_text").text("D-1");
-				$(".present01").addClass("disNone");
+				$(".present01,.present01_2").addClass("disNone");
 				$(".present02").addClass("disShow");
 				$(".machine_ball_motions").addClass("d1_motion");
 			}
