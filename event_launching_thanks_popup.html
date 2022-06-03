@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./css/reset.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/front.js"></script>
+	<title></title>
+</head>
+<body class="page_body">
+	<div class="page_wrap">
+		<div class="guide_low"><a href="javascript:;" onclick="shpuzzle.dimLayerShow({'target':'#target01'});"
+				class="btn_guidecall">레이어팝업호출</a></div>
+		<script>
+			$(function () {
+				// trigger
+				shpuzzle.dimLayerShow({ 'target': '#target01' });
+			});
+		</script>
+		<!-- -->
+		<div class="dlayer_z" id="target01">
+			<div class="dlayer_bg"></div>
+			<div class="dlayer_box_z">
+				<div class="dlayer_box_w">
+					<div class="design_wbox_sm_w">
+						<div class="design_wbox_sm_top">
+							<p class="design_copy_sig_sm_text">이벤트에 참여해주셔서 <br>감사합니다!<br>추천 경품에 응모되었습니다</p>
+						</div>
+						<div class="design_wbox_sm_bottom type2">
+							<p class="design_guide_textpara">경품 추첨일 : <strong>8월 3일</strong><br>당첨자에게 개별 공지 예정</p>
+							<div class="btn_design_sm_low">
+								<a href="javascript:;" class="btn_design_sm closetrigger">확인</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./css/reset.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/front.js"></script>
+	<title></title>
+</head>
+<body class="page_body">
+	<div class="page_wrap">
+		<div class="guide_low"><a href="javascript:;" onclick="shpuzzle.dimLayerShow({'target':'#target01'});"
+				class="btn_guidecall">레이어팝업호출</a></div>
+		<script>
+			$(function () {
+				// trigger
+				shpuzzle.dimLayerShow({ 'target': '#target01' });
+			});
+		</script>
+		<!-- -->
+		<div class="dlayer_z" id="target01">
+			<div class="dlayer_bg"></div>
+			<div class="dlayer_box_z">
+				<div class="dlayer_box_w">
+					<div class="design_wbox_sm_w">
+						<div class="design_wbox_sm_top">
+							<p class="design_copy_sig_text">스마일ON은<br>라이프온 서비스가<br>맞습니다</p>
+						</div>
+						<div class="design_wbox_sm_bottom">
+							<p class="design_copy_sig_copy">정답을 다시 선택해보세요</p>
+							<div class="btn_design_sm_low">
+								<a href="javascript:;" class="btn_design_sm closetrigger">확인</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // -->
+	</div>
+</body>
+
+</html>
