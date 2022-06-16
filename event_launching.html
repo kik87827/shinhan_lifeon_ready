@@ -20,19 +20,32 @@
 				<div class="motion_zone">
 					<p class="quiz_text"><img src="images/launching_quiz.png" alt=""></p>
 					<div class="btn_choice_w">
-						<div class="btn_choice_cell"><a href="javascript:;" data-target="#ball01" class="btn_choice"><img src="images/ball_quiz_01.png" alt=""></a></div>
-						<div class="btn_choice_cell"><a href="javascript:;" data-target="#ball02" class="btn_choice"><img src="images/ball_quiz_02.png" alt=""></a></div>
-						<div class="btn_choice_cell"><a href="javascript:;" data-target="#ball03" class="btn_choice"><img src="images/ball_quiz_03.png" alt=""></a></div>
-						<div class="btn_choice_cell"><a href="javascript:;" data-target="#ball04" class="btn_choice"><img src="images/ball_quiz_04.png" alt=""></a></div>
+						<div class="btn_choice_cell">
+							<a href="javascript:;" data-target="#ball01" class="btn_choice"><img src="images/ball_quiz_01_onlyball.png" alt=""></a>
+							<div class="ball_shadow"></div>
+						</div>
+						<div class="btn_choice_cell">
+							<a href="javascript:;" data-target="#ball02" class="btn_choice"><img src="images/ball_quiz_02_onlyball.png" alt=""></a>
+							<div class="ball_shadow"></div>
+						</div>
+						<div class="btn_choice_cell">
+							<a href="javascript:;" data-target="#ball03" class="btn_choice"><img src="images/ball_quiz_03_onlyball.png" alt=""></a>
+							<div class="ball_shadow"></div>
+						</div>
+						<div class="btn_choice_cell">
+							<a href="javascript:;" data-target="#ball04" class="btn_choice"><img src="images/ball_quiz_04_onlyball.png" alt=""></a>
+							<div class="ball_shadow"></div>
+						</div>
 					</div>
 					<div class="getter_hand_item">
 						<div class="getter_subline"></div>
 						<div class="getter_main">
 							<div class="getter_hand">
-								<img src="images/get_obj2.png" class="getter_hand_img" alt="">
+								<img src="images/get_obj2.png" class="getter_hand_img take" alt="">
+								<img src="images/get_obj.png" class="getter_hand_img origin" style="display:block;" alt="">
 							</div>
 						</div>
-						<div class="getter_ball"><img src="images/jd_obj.png" alt=""></div>
+						<!-- <div class="getter_ball"><img src="images/jd_obj.png" alt=""></div> -->
 						<div class="quiz_ball type_yellow" id="ball01">
 							<img src="images/show_01ball.png" class="normal" alt="">
 							<img src="images/show_01ball_result.png" class="result" alt="">
@@ -87,48 +100,27 @@
     </div>
 
 	<!-- 모션 끝나고 나오는 팝업 -->
-	<!-- 1 - 따뜻한행복 -->
-	<div class="dlayer_z" id="target01">
+	<!-- 꽝 -->
+	<div class="dlayer_z" id="target_x">
 		<div class="dlayer_bg"></div>
 		<div class="dlayer_box_z">
 			<div class="dlayer_box_w">
 				<div class="design_wbox_sm_w">
 					<div class="design_wbox_sm_top">
-						<p class="design_copy_sig_text">따뜻한 행복은<br>라이프온 서비스가<br>맞습니다</p>
+						<p class="design_copy_sig_text type2">Life On이 아닌 것을 <br>다시 선택해보세요~</p>
 					</div>
 					<div class="design_wbox_sm_bottom">
-						<p class="design_copy_sig_copy">정답을 다시 선택해보세요</p>
 						<div class="btn_design_sm_low">
-							<a href="javascript:;" class="btn_design_sm closetrigger">확인</a>
+							<a href="javascript:;" class="btn_design_sm type2 closetrigger">다시 참여하기</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- // 1 - 따뜻한행복 -->
-	<!-- 2 - 스마일온 -->
-	<div class="dlayer_z" id="target02">
-		<div class="dlayer_bg"></div>
-		<div class="dlayer_box_z">
-			<div class="dlayer_box_w">
-				<div class="design_wbox_sm_w">
-					<div class="design_wbox_sm_top">
-						<p class="design_copy_sig_text">스마일ON은<br>라이프온 서비스가<br>맞습니다</p>
-					</div>
-					<div class="design_wbox_sm_bottom">
-						<p class="design_copy_sig_copy">정답을 다시 선택해보세요</p>
-						<div class="btn_design_sm_low">
-							<a href="javascript:;" class="btn_design_sm closetrigger">확인</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- // 2 - 스마일온 -->
-	<!-- 3 - 해피콜 -->
-	<div class="dlayer_z" id="target03">
+	<!-- // 꽝 -->
+	<!-- 정답 -->
+	<div class="dlayer_z" id="target_o">
 		<div class="dlayer_bg"></div>
 		<div class="dlayer_box_z">
 			<div class="dlayer_box_w">
@@ -146,27 +138,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- // 3 - 해피콜 -->
-	<!-- 4 - 웰컴 -->
-	<div class="dlayer_z" id="target04">
-		<div class="dlayer_bg"></div>
-		<div class="dlayer_box_z">
-			<div class="dlayer_box_w">
-				<div class="design_wbox_sm_w">
-					<div class="design_wbox_sm_top">
-						<p class="design_copy_sig_text">웰컴은<br>라이프온 서비스가<br>맞습니다</p>
-					</div>
-					<div class="design_wbox_sm_bottom">
-						<p class="design_copy_sig_copy">정답을 다시 선택해보세요</p>
-						<div class="btn_design_sm_low">
-							<a href="javascript:;" class="btn_design_sm closetrigger">확인</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- // 4 - 웰컴 -->
+	<!-- // 정답 -->
+	
 	<!-- 감사 -->
 	<div class="dlayer_z" id="target_thanks">
 		<div class="dlayer_bg"></div>
@@ -174,7 +147,7 @@
 			<div class="dlayer_box_w">
 				<div class="design_wbox_sm_w">
 					<div class="design_wbox_sm_top">
-						<p class="design_copy_sig_sm_text">이벤트에 참여해주셔서 <br>감사합니다!<br>추천 경품에 응모되었습니다</p>
+						<p class="design_copy_sig_sm_text">이벤트에 참여해주셔서 <br>감사합니다!<br>추천 경품에 응모되셨습니다</p>
 					</div>
 					<div class="design_wbox_sm_bottom type2">
 						<p class="design_guide_textpara">경품 추첨일 : <strong>8월 3일</strong><br>당첨자에게 개별 공지 예정</p>
@@ -198,7 +171,12 @@
         });
 
 
-		$(function(){
+		$(window).on("load",function(){
+			$(".landing_wrap").addClass("visShow");
+			$(".btn_choice_w").addClass("motion");
+			// $(".btn_choice_cell").last().one("transitionend",function(){
+			// 	$(".btn_choice_w").addClass("motion_end");
+			// });
 			// 버튼 선택
 			$(".btn_choice").on("click",function(e){
 				e.preventDefault();
@@ -210,7 +188,6 @@
 				$(".getter_hand_item").addClass("quiz_active quiz_ball_scene");
 				$t_t.show();
 				setTimeout(function(){
-					$(".getter_hand_img").attr("src","./images/get_obj.png")
 					$(".getter_hand_item").removeClass("quiz_ball_scene");
 					$t_t.addClass("result");
 					$t_t.filter(".result").one("transitionend",function(){
@@ -223,49 +200,50 @@
 									setTimeout(function(){
 										//$(".getter_hand_item").removeClass("result_get_up");
 										if($this.attr("data-target") === "#ball03"){
-											shpuzzle.dimLayerShow({ 'target': '#target03' });
+											shpuzzle.dimLayerShow({ 'target': '#target_o' });
 										}else{
 											if($this.attr("data-target") === "#ball01"){
-												shpuzzle.dimLayerShow({ 'target': '#target01' });
+												shpuzzle.dimLayerShow({ 'target': '#target_x' });
 											}else if($this.attr("data-target") === "#ball02"){
-												shpuzzle.dimLayerShow({ 'target': '#target02' });
+												shpuzzle.dimLayerShow({ 'target': '#target_x' });
 											}else if($this.attr("data-target") === "#ball04"){
-												shpuzzle.dimLayerShow({ 'target': '#target04' });
+												shpuzzle.dimLayerShow({ 'target': '#target_x' });
 											}
-											$(".getter_hand_img").attr("src","./images/get_obj.png");
+											// $(".getter_hand_img").attr("src","./images/get_obj.png");
+											$(".getter_hand_img.take").fadeOut(100);
+											$(".getter_hand_img.origin").fadeIn(100);
 											$(".quiz_ball").removeClass("result_get_up");
 										}
 									},800);
 								});
 							});
 							setTimeout(function(){
-								$(".getter_hand_img").attr("src","./images/get_obj2.png");
+								$(".getter_hand_img.origin").fadeOut(100);
+								$(".getter_hand_img.take").fadeIn(100);
 							},355);
 						},500);
 					});
-				},1000);
+				},600);
 			});
 			//$("[data-target='#ball01']").trigger("click");
 
-			$("#target01, #target02, #target04").find(".btn_design_sm").on("click",function(){
+			$("#target_x").find(".btn_design_sm").on("click",function(){
 				// window.location.reload();
 				$(".btn_choice_w,.quiz_text").show();
 				$(".motion_zone").addClass("transition_reset").removeClass("motion_start");
 				$(".getter_hand_item").removeClass("quiz_active quiz_ball_scene result_get_down result_get_up");
 				$(".quiz_ball").removeClass("result_get_up result");
-				$(".getter_hand_img").attr("src","./images/get_obj2.png");
+				// $(".getter_hand_img").attr("src","./images/get_obj2.png");
+				$(".getter_hand_img.take").fadeOut(100);
+				$(".getter_hand_img.origin").fadeIn(100);
 				setTimeout(function(){
 					$(".motion_zone").removeClass("transition_reset");
 				},30);
 			});
-			$("#target03").find(".btn_design_sm").on("click",function(){
+			$("#target_o").find(".btn_design_sm").on("click",function(){
 				shpuzzle.dimLayerShow({ 'target': '#target_thanks' });
 			});
 		});
-
-		$(window).on("load",function(){
-			$(".landing_wrap").addClass("visShow");
-		})
     </script>
 </body>
 </html>
